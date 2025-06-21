@@ -10,10 +10,46 @@ body {
 .container {
   background-color: #fffd6f;
   padding: 10px;
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* column-gap: 20px; */
+  /* row-gap: 40px; */
+
+  /* Значение по умолчанию */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* align-items: flex-start; */
+  /* align-items: baseline; */
+
+  /* align-content: center; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+
+  /* Значение по умолчанию */
+  /* align-content: stretch; */
+
+  /* Значение по умолчанию */
+  /* align-items: stretch; */
 }
 
 .item {
   background: #ffd057;
   padding: 30px;
-  margin: 10px;
+  /* margin: 10px; */
+  height: 200px;
 }
