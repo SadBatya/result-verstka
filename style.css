@@ -54,15 +54,27 @@ body {
 .item {
   background: #ffd057;
   padding: 30px;
+
   /* margin: 10px; */
   /* height: 200px; */
+
+  /* Значения по умолчанию */
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+
+  /* flex-basis: 200px; */
+  /* flex-basis: content; */
 }
 
-.item-1{
+.item-1 {
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
   /* order: 1; */
 }
 
 .item-3 {
+  /* flex-grow: 3; */
   /* align-self: flex-start; */
   /* align-self: stretch; */
   /* margin-left: auto; */
