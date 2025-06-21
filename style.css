@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #fffd6f;
+  padding: 10px;
+}
+
+.item {
+  background: #ffd057;
+  padding: 30px;
+  margin: 10px;
+}
