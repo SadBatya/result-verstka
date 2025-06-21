@@ -19,6 +19,7 @@ body {
 
   /* Значение по умолчанию */
   /* flex-wrap: nowrap; */
+
   /* flex-wrap: wrap; */
   /* flex-wrap: wrap-reverse; */
   /* flex-flow: column wrap; */
@@ -29,7 +30,7 @@ body {
   /* justify-content: space-around; */
   /* justify-content: space-evenly; */
 
-  /* align-items: center; */
+  align-items: center;
   /* align-items: flex-end; */
   /* align-items: flex-start; */
   /* align-items: baseline; */
@@ -44,9 +45,6 @@ body {
   /* Значение по умолчанию */
   /* align-content: stretch; */
 
-  /* Значение по умолчанию */
-  /* align-items: stretch; */
-
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
   /* flex-direction: row; */
@@ -57,5 +55,16 @@ body {
   background: #ffd057;
   padding: 30px;
   /* margin: 10px; */
-  height: 200px;
+  /* height: 200px; */
+}
+
+.item-1{
+  /* order: 1; */
+}
+
+.item-3 {
+  /* align-self: flex-start; */
+  /* align-self: stretch; */
+  /* margin-left: auto; */
+  /* order: -1; */
 }
