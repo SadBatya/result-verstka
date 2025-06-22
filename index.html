@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bentham&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Suranna&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Flexbox</title>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <article class="card">
         <img
           class="card__img"
@@ -27,10 +33,12 @@
             <li class="tags__item">Dinner</li>
             <li class="tags__item">Delicious</li>
           </ul>
-          <span class="card__price">$16.99</span>
-          <button class="card__button">buy now</button>
+          <div class="card__bottom">
+            <span class="card__price">$16.99</span>
+            <button class="card__button">buy now</button>
+          </div>
         </div>
       </article>
-    </div>
+    </main>
   </body>
 </html>

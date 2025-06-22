@@ -5,6 +5,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Playfair Display", sans-serif;
+  color: #8d8d8d;
 }
 
 .container {
@@ -29,7 +31,48 @@ body {
   object-fit: cover;
 }
 
-
-.card__content{
+.card__content {
   padding: 52px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__title {
+  font-family: "Bentham", serif;
+  color: #474747;
+  font-size: 34px;
+  margin: 0;
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.card__tags {
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+
+.tags__item {
+  list-style: none;
+  border: 1px solid #57b25f;
+  color: #57b25f;
+  padding: 5px 10px;
+  border-radius: 1em;
+}
+
+.card__price {
+}
+
+.card__button {
 }
