@@ -6,46 +6,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bentham&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Suranna&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>SHOP</title>
   </head>
   <body>
-    <main class="container">
-      <article class="card">
-        <picture class="card__picture">
-          <source
-            srcset="images/pizza-mob.jpeg"
-            type="image/jpeg"
-            media="max-width: 768px"
-          />
-          <img
-            class="card__img"
-            src="images/pizza.jpeg"
-            alt="chicken pizza on the table"
-          />
-        </picture>
-        <div class="card__content">
-          <h1 class="card__title">Hawaiian chicken pizza</h1>
-          <p class="card__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            hic?
-          </p>
-          <ul class="card__tags tags">
-            <li class="tags__item">Food</li>
-            <li class="tags__item">Hawaiian pizza</li>
-            <li class="tags__item">Chicken</li>
-            <li class="tags__item">Dinner</li>
-            <li class="tags__item">Delicious</li>
-          </ul>
-          <div class="card__bottom">
-            <span class="card__price">$16.99</span>
-            <button class="card__button button">buy now</button>
+    <div class="container">
+      <h1 class="title">Лучшие товары</h1>
+      <div class="cards">
+        <div class="card">
+          <picture class="card__img-container">
+            <img class="card__img" src="./assets/img-1.jpg" alt="" />
+          </picture>
+          <div class="card__content">
+            <p class="card__price">9 990 ₽</p>
+            <h2 class="card__title">GAZELLE</h2>
+            <p class="card__subtitle">adidas Originals</p>
           </div>
         </div>
-      </article>
-    </main>
+        <div class="card">
+          <picture class="card__img-container">
+            <img class="card__img" src="./assets/img-2.jpg" alt="" />
+          </picture>
+          <div class="card__content">
+            <p class="card__price">14 990 ₽</p>
+            <h2 class="card__title">X-race</h2>
+            <p class="card__subtitle">New Balance</p>
+          </div>
+        </div>
+        <div class="card">
+          <picture class="card__img-container">
+            <img class="card__img" src="./assets/img-3.jpg" alt="" />
+          </picture>
+          <div class="card__content">
+            <p class="card__price">16 990 ₽</p>
+            <h2 class="card__title">GAZELLE</h2>
+            <p class="card__subtitle">Jordan</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
