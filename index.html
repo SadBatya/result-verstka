@@ -4,13 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Flexbox</title>
   </head>
   <body>
     <div class="container">
-      <div class="item item-1">1</div>
-      <div class="item item-2">2</div>
-      <div class="item item-3">3</div>
+      <article class="card">
+        <img
+          class="card__img"
+          src="images/pizza.jpeg"
+          alt="chicken pizza on the table"
+        />
+        <div class="card__content">
+          <h1 class="card__title">Hawaiian chicken pizza</h1>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            hic?
+          </p>
+          <ul class="card__tags tags">
+            <li class="tags__item">Food</li>
+            <li class="tags__item">Hawaiian pizza</li>
+            <li class="tags__item">Chicken</li>
+            <li class="tags__item">Dinner</li>
+            <li class="tags__item">Delicious</li>
+          </ul>
+          <span class="card__price">$16.99</span>
+          <button class="card__button">buy now</button>
+        </div>
+      </article>
     </div>
   </body>
 </html>

@@ -3,96 +3,33 @@
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  background-color: #fffd6f;
-  padding: 10px;
+  background-color: #fbe9e7;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
   display: flex;
-  height: 500px;
-  /* flex-wrap: wrap; */
-  gap: 20px;
-  /* column-gap: 20px; */
-  /* row-gap: 40px; */
-
-  /* Значение по умолчанию */
-  /* flex-wrap: nowrap; */
-
-  /* flex-wrap: wrap; */
-  /* flex-wrap: wrap-reverse; */
-  /* flex-flow: column wrap; */
-  /* justify-content: center; */
-  /* justify-content: flex-end; */
-  /* justify-content: flex-start; */
-  /* justify-content: space-between; */
-  /* justify-content: space-around; */
-  /* justify-content: space-evenly; */
-
-  align-items: center;
-  /* align-items: flex-end; */
-  /* align-items: flex-start; */
-  /* align-items: baseline; */
-
-  /* align-content: center; */
-  /* align-content: flex-start; */
-  /* align-content: flex-end; */
-  /* align-content: space-between; */
-  /* align-content: space-around; */
-  /* align-content: space-evenly; */
-
-  /* Значение по умолчанию */
-  /* align-content: stretch; */
-
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
-  /* flex-direction: row; */
-  /* flex-direction: row-reverse; */
+  max-width: 750px;
+  background-color: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
 }
 
-.item {
-  background: #ffd057;
-  padding: 30px;
-
-  /* margin: 10px; */
-  /* height: 200px; */
-
-  /* Значения по умолчанию */
-  flex-shrink: 1;
-  flex-grow: 0;
-  flex-basis: auto;
-
-  /* flex-basis: 200px; */
-  /* flex-basis: content; */
-
-  /* flex-grow flex-shrink flex-basis; */
-  /* flex: 1 1 100px; */
-
-  /* Значение по умолчанию */
-  /* flex: 0 1 auto; */
-
-
-  /* flex-grow: 0 flex-shrink: 0; flex-basis: auto; */
-  /* flex: none */
-
-  /* flex-grow: 1 flex-shrink: 1; flex-basis: auto; */
-  /* flex: auto; */
-
-
-  
+.card__img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
-.item-1 {
-  /* flex-grow: 1; */
-  /* flex-shrink: 2; */
-  /* order: 1; */
-}
 
-.item-3 {
-  /* flex-grow: 3; */
-  /* align-self: flex-start; */
-  /* align-self: stretch; */
-  /* margin-left: auto; */
-  /* order: -1; */
+.card__content{
+  padding: 52px 38px;
 }
