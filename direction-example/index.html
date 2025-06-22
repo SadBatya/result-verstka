@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item flex-item-2">Item 2</div>
+    </div>
+
+    <label>
+      Text direction is
+      <select class="global-dir-switcher">
+        <option value="ltr">left to right (ltr)</option>
+        <option value="rtl">right to left (rtl)</option>
+      </select>
+    </label>
+
+    <fieldset class="controls">
+      <legend>flex-контейнер</legend>
+
+      <label>
+        flex-direction
+        <select class="var-switcher" data-type="flex-direction">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+      </label>
+
+      <label>
+        justify-content
+        <select class="var-switcher" data-type="justify-content">
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="left">left</option>
+          <option value="right">right</option>
+        </select>
+      </label>
+
+      <label>
+        align-items
+        <select class="var-switcher" data-type="align-items">
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="self-start">self-start</option>
+          <option value="self-end">self-end</option>
+        </select>
+      </label>
+
+    </fieldset>
+
+    <fieldset class="controls">
+      <legend>flex-элемент (Item 2)</legend>
+
+      <label>
+        align-self
+        <select class="var-switcher" data-type="align-self">
+          <option value="auto">auto</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="self-start">self-start</option>
+          <option value="self-end">self-end</option>
+        </select>
+      </label>
+
+      <label>
+        direction
+        <select class="var-switcher" data-type="direction-item">
+          <option value="ltr">ltr</option>
+          <option value="rtl">rtl</option>
+        </select>
+      </label>
+
+    </fieldset>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
