@@ -10,7 +10,8 @@ body {
 .container {
   display: grid;
   background-color: #bca0dc;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
   height: 400px;
   padding: 20px;
   gap: 20px 30px;
@@ -20,4 +21,8 @@ body {
   background-color: #7c5295;
   padding: 20px;
   color: white;
+}
+
+.item-1 {
+  place-self: center center;
 }
