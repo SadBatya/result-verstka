@@ -18,14 +18,19 @@ body {
 }
 
 .header {
-  background-color: white;
+  width: 100%;
   position: absolute;
   top: 0;
+  background-color: white;
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
   width: 100%;
-  max-width: 1240px;
+  margin: 0 auto;
   padding: 20px 40px;
 }
 
@@ -58,7 +63,6 @@ body {
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .button:hover {
@@ -98,12 +102,9 @@ body {
 }
 
 @media (max-width: 480px) {
-  .header {
+  .header__container {
     flex-wrap: wrap;
-  }
-
-  .header__logo {
-    margin-bottom: 20px;
+    row-gap: 20px;
   }
 
   .header__nav {
