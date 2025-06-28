@@ -13,6 +13,7 @@
 
 .arrow__link {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   align-items: center;
   font-size: 40px;
@@ -23,23 +24,30 @@
 
 .arrow__link::after {
   font-size: 1.075em;
-  content: "\2192";
+  content: "\2193";
   transition: transform 0.3s ease;
+  animation: jumping 1s ease-in-out infinite;
+}
+
+.arrow__link:hover::after {
+  animation-play-state: paused;
 }
 
 .arrow__link:hover {
   color: blue;
 }
-.arrow__link:hover::after {
-  transform: translateX(30px);
-}
 
-.modal {
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: aquamarine;
-  text-align: center;
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+    color: blue;
+  }
+  50% {
+    transform: translateY(-20px);
+    color: black;
+  }
+  100% {
+    transform: translateY(0);
+    color: blue;
+  }
 }
