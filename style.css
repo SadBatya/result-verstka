@@ -10,68 +10,56 @@
   font-family: "Roboto", sans-serif;
   padding: 0 40px;
   background-color: #1a2534;
-}
-
-.subscriptions {
-  list-style: none;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
-  width: 100%;
 }
 
-.subscription__card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  padding: 50px 30px 0;
-  text-align: center;
-  border-radius: 12px;
+.container {
+  width: 100%;
   position: relative;
-  width: 200px;
-  height: 350px;
-  flex: 1;
+  left: 50%;
 }
 
-.subscription__card--big {
-  padding-top: 80px;
-  height: 450px;
-}
-
-.subscription__card-price {
-  font-size: 32px;
-}
-
-.subscription__card-name {
-  font-size: 24px;
-  opacity: 50%;
-  text-transform: uppercase;
-}
-
-.subscription__card-cta {
-  font-size: 24px;
-  background-color: green;
-  width: 100%;
-  padding: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
+.pulsing-dots {
+  width: 24px;
+  height: 24px;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  border-radius: 50%;
+  background-color: white;
+  animation: pulse 2s infinite ease-in-out 0s;
 }
 
-.subscriptions__item:nth-child(1) .subscription__card-cta {
-  background-color: green;
+.pulsing-dots::before,
+.pulsing-dots::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  top: 0;
 }
 
-.subscriptions__item:nth-child(2) .subscription__card-cta {
-  background-color: yellow;
+.pulsing-dots::before {
+  left: -30px;
+  animation: pulse 2s infinite ease-in-out 0.2s;
 }
 
-.subscriptions__item:nth-child(3) .subscription__card-cta {
-  background-color: red;
+.pulsing-dots::after {
+  left: 30px;
+  animation: pulse 2s infinite ease-in-out 0.6s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
