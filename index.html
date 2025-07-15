@@ -2,26 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Advanced HTML text</title>
+    <title>Responsive image</title>
   </head>
+
   <body>
-    <h1>HTML</h1>
+    <h1>Birmingham Museums Trust</h1>
 
-    <ul>
-      <li>Filename extension: .html</li>
-      <li>Developed by: WHATWG, World Wide Web Consortium</li>
-      <li>Website: html.spec.whatwg.org</li>
-    </ul>
+    <!-- Можно задать через размеры вьюпорта -->
+    <!-- <img
+      srcset="
+        assets/original-3999x2749.jpg  3999w,
+        assets/medium-2000x1375.jpg    2000w,
+        assets/small-1200x880.jpg      1200w,
+        assets/extra-small-800x550.jpg  800w
+      "
+      src="assets/original-3999x2749.jpg"
+      alt=""
+    /> -->
 
-    <div>
-      <blockquote>
-        <p>
-          Learning HTML and CSS is a lot more challenging than it used to be.
-          Responsive web design adds more layers of complexity to design and
-          develop websites.
-        </p>
-      </blockquote>
-      <p>— Jacob Lett.</p>
-    </div>
+    <!-- Также можно через плотность пикселей -->
+    <img
+      srcset="
+        assets/original-3999x2749.jpg  3x,
+        assets/medium-2000x1375.jpg    2x,
+        assets/small-1200x880.jpg      1x,
+        assets/extra-small-800x550.jpg 0.5x
+      "
+      src="assets/original-3999x2749.jpg"
+      alt=""
+    />
+
+    <p>Near Glarus, Switzerland, 1781 by John Warwick Smith</p>
   </body>
 </html>
