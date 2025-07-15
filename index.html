@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>Responsive image</title>
+    <title>Advanced HTML</title>
   </head>
 
-  <body>
-    <h1>Birmingham Museums Trust</h1>
+  <body itemscope itemtype="https://schema.org/FAQPage">
+    <h1 itemprop="name">Часто задаваемые вопросы</h1>
 
-    <!-- Можно задать через размеры вьюпорта -->
-    <!-- <img
-      srcset="
-        assets/original-3999x2749.jpg  3999w,
-        assets/medium-2000x1375.jpg    2000w,
-        assets/small-1200x880.jpg      1200w,
-        assets/extra-small-800x550.jpg  800w
-      "
-      src="assets/original-3999x2749.jpg"
-      alt=""
-    /> -->
-
-    <!-- Также можно через плотность пикселей -->
-    <img
-      srcset="
-        assets/original-3999x2749.jpg  3x,
-        assets/medium-2000x1375.jpg    2x,
-        assets/small-1200x880.jpg      1x,
-        assets/extra-small-800x550.jpg 0.5x
-      "
-      src="assets/original-3999x2749.jpg"
-      alt=""
-    />
-
-    <p>Near Glarus, Switzerland, 1781 by John Warwick Smith</p>
+    <ul>
+      <li itemscope itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Что нужно, чтобы начать обучение?</h2>
+        <p itemprop="acceptedAnswer">
+          Приступить к курсу можно бесплатно и с нуля — перед обучением не нужно
+          готовиться или отклыдвать деньги.
+        </p>
+      </li>
+      <li itemscope itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Как проходит обучение?</h2>
+        <p itemprop="acceptedAnswer">
+          После регистрации на нашей платформе у вас появится личный кабинет. В
+          нем вы сможете отследить свой прогресс, выполнить задания и получить
+          обратную связь от куратора. На протяжении всего курса с вами работает
+          наставник, который проверяет ваши работы и помогает разобраться со
+          сложными темами. Ваше взаимодействие будет комфортным и быстрым —
+          каждое задание проверяется в течение одних суток.
+        </p>
+      </li>
+      <li itemscope itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Получу ли я сертификат после прохождения курса?</h2>
+        <p itemprop="acceptedAnswer">
+          Да, в конце обучения вы получите сертификат, где будут прописаны все
+          темы, которые вы пройдете в рамках курса.
+        </p>
+      </li>
+    </ul>
   </body>
 </html>
