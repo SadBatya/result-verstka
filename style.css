@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --text-color-nav: #222222;
+  --text-color-base: #333333;
+  --text-color-secondary: #ffffff;
+  --text-color-hover: #0082f3;
+  --color-bg: #31c5a1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--text-color-base);
+}
+
+.header {
+  max-width: 1240px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.menu__item {
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--text-color-nav);
+  transition: color 0.3s ease;
+}
+
+.menu__item:hover {
+  color: var(--text-color-hover);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+.section {
+  max-width: 1240px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 130px;
+}
+
+.left__column-title {
+  font-weight: 500;
+  font-size: 55px;
+  max-width: 306px;
+}
+
+.left__column-description {
+  font-size: 24px;
+  max-width: 434px;
+}
+
+.section__works {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 60px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section__works-title {
+  font-weight: 500;
+  font-size: 55px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 288px;
+  filter: drop-shadow(0px 0px 10px #b7b7b7);
+  background-color: white;
+  text-align: center;
+  border-top: 12px solid #582eff;
+  padding: 42px 20px 75px 20px;
+}
+
+.card__img {
+  width: 51px;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.card:not(:first-child) .card__img {
+  width: 78px;
+}
+
+.card__title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.section__app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0 60px 0;
+  background-color: #31c5a1;
+}
+
+.section__app-title {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 555px;
+}
+
+.section__app-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section__app-btns img {
+  cursor: pointer;
+}
+
+.section__form {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.form__description {
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+
+.form__input {
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1.5px solid #b0aeba;
+  margin-bottom: 14px;
+}
+
+.form__input::placeholder {
+  color: #9f9f9f;
+}
+
+.form__textarea {
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1.5px solid #b0aeba;
+  padding: 10px 20px;
+  height: 114px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.form__textarea::placeholder {
+  color: #9f9f9f;
+}
+
+.form__button {
+  max-width: 143px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeaff;
+  color: #582eff;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+}
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 60px 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 17px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__list:first-child {
+  margin-bottom: 10px;
+}
+
+.footer__rights {
+  max-width: 264px;
+}
+
+.footer__rights-title {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.footer__rights-description {
+  line-height: 175%;
+}

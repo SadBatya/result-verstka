@@ -1,39 +1,151 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Advanced HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Irorun</title>
   </head>
-
-  <body itemscope itemtype="https://schema.org/FAQPage">
-    <h1 itemprop="name">Часто задаваемые вопросы</h1>
-
-    <ul>
-      <li itemscope itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Что нужно, чтобы начать обучение?</h2>
-        <p itemprop="acceptedAnswer">
-          Приступить к курсу можно бесплатно и с нуля — перед обучением не нужно
-          готовиться или отклыдвать деньги.
+  <body class="body">
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="logo header__logo">
+          <img src="./assets/logo.svg" alt="Irorun logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section">
+        <div class="left__column">
+          <h1 class="left__column-title">Get Instant Loans</h1>
+          <p class="left__column-description">
+            Get instant loans with ease on your smartphone.
+          </p>
+          <div class="left__column-btns">
+            <a href="#">
+              <img src="./assets/google-purple.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/apple-purple.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="right__column">
+          <img src="./assets/man-1.svg" alt="" />
+        </div>
+      </section>
+      <section class="section">
+        <div class="right__column">
+          <img src="./assets/man-2.svg" alt="" />
+        </div>
+        <div class="left__column">
+          <h2 class="left__column-title">Save on your own terms</h2>
+          <p class="left__column-description">
+            Savings give you financial options
+          </p>
+          <div class="left__column-btns">
+            <a href="#">
+              <img src="./assets/google-purple.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/apple-purple.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section__works">
+        <h2 class="section__works-title">How it works</h2>
+        <div class="cards">
+          <div class="card">
+            <img class="card__img" src="./assets/account.svg" alt="" />
+            <h3 class="card__title">Set up an account</h3>
+            <p class="card__description">
+              Download the app for free, sign up and verify your account.
+            </p>
+          </div>
+          <img class="card__arrow" src="./assets/arrow.svg" alt="" />
+          <div class="card">
+            <img class="card__img" src="./assets/paper-pencil.svg" alt="" />
+            <h3 class="card__title">Set up an account</h3>
+            <p class="card__description">
+              Download the app for free, sign up and verify your account.
+            </p>
+          </div>
+          <img class="card__arrow" src="./assets/arrow.svg" alt="" />
+          <div class="card">
+            <img class="card__img" src="./assets/hands-money.svg" alt="" />
+            <h3 class="card__title">Set up an account</h3>
+            <p class="card__description">
+              Download the app for free, sign up and verify your account.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section__app">
+        <h2 class="section__app-title">
+          Get it on Play Store and download on the App Store
+        </h2>
+        <div class="section__app-btns">
+          <img src="./assets/apple-white.svg" alt="" />
+          <img src="./assets/google-white.svg" alt="" />
+        </div>
+      </section>
+      <section class="section__form">
+        <img src="./assets/man-3.svg" alt="" />
+        <form action="#" class="form">
+          <h2 class="form__title">Write your feedback</h2>
+          <p class="form__description">
+            Write your suggestions for improving our application. We will
+            certainly listen to them.
+          </p>
+          <input placeholder="Your name" type="text" class="form__input" />
+          <textarea
+            placeholder="Text"
+            class="form__textarea"
+            name=""
+            id=""
+          ></textarea>
+          <button class="form__button">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footer__img" src="./assets/logo.svg" alt="" />
+      <ul class="footer__list">
+        <li>Office</li>
+        <li>4 Perez Drive, Lekki.</li>
+        <li>Phase 1, Lagos</li>
+      </ul>
+      <ul class="footer__list">
+        <li>Contact</li>
+        <li>hello@irorun.com</li>
+        <li>+234 809 666 8877</li>
+      </ul>
+      <div class="footer__rights">
+        <h4 class="footer__rights-title">Powered by YesCredit Limited.</h4>
+        <p class="footer__rights-description">
+          licensed as a Money Lender by the Lagos State Government of Nigeria.
         </p>
-      </li>
-      <li itemscope itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Как проходит обучение?</h2>
-        <p itemprop="acceptedAnswer">
-          После регистрации на нашей платформе у вас появится личный кабинет. В
-          нем вы сможете отследить свой прогресс, выполнить задания и получить
-          обратную связь от куратора. На протяжении всего курса с вами работает
-          наставник, который проверяет ваши работы и помогает разобраться со
-          сложными темами. Ваше взаимодействие будет комфортным и быстрым —
-          каждое задание проверяется в течение одних суток.
-        </p>
-      </li>
-      <li itemscope itemtype="https://schema.org/Question">
-        <h2 itemprop="name">Получу ли я сертификат после прохождения курса?</h2>
-        <p itemprop="acceptedAnswer">
-          Да, в конце обучения вы получите сертификат, где будут прописаны все
-          темы, которые вы пройдете в рамках курса.
-        </p>
-      </li>
-    </ul>
+      </div>
+    </footer>
   </body>
 </html>
